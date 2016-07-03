@@ -6,3 +6,4 @@
 
 1. [AnimatedLabel](AnimatedLabel_doc.md)
 2. [Tween](Tween_doc.md)
+3. [RoundChart](RoundChart_doc.md)

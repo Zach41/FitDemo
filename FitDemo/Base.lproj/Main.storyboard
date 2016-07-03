@@ -38,12 +38,22 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7oO-u2-TjO" customClass="RoundChartView" customModule="FitDemo" customModuleProvider="target">
+                                <rect key="frame" x="220" y="301" width="160" height="160"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="LXC-3E-Qir"/>
+                                    <constraint firstAttribute="width" constant="160" id="gGf-hj-Pbm"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Zox-7U-1Fw" firstAttribute="top" secondItem="X2u-MK-MaI" secondAttribute="bottom" constant="49" id="H2c-4g-3IX"/>
                             <constraint firstItem="X2u-MK-MaI" firstAttribute="top" secondItem="tWF-gs-tJU" secondAttribute="bottom" constant="8" id="Hjz-H9-a75"/>
                             <constraint firstItem="Zox-7U-1Fw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hol-UM-ryB"/>
+                            <constraint firstItem="7oO-u2-TjO" firstAttribute="top" secondItem="Zox-7U-1Fw" secondAttribute="bottom" constant="8" id="OWi-cS-Ucd"/>
+                            <constraint firstItem="7oO-u2-TjO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZLh-Sw-YGV"/>
                             <constraint firstItem="tWF-gs-tJU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hJ3-RA-ugl"/>
                             <constraint firstItem="tWF-gs-tJU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="kpT-R1-GYN"/>
                             <constraint firstItem="X2u-MK-MaI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lr9-o0-lJA"/>
@@ -52,6 +62,7 @@
                     <connections>
                         <outlet property="labelVIew" destination="tWF-gs-tJU" id="lio-5e-buT"/>
                         <outlet property="percentabgeLabel" destination="Zox-7U-1Fw" id="4El-qc-uvL"/>
+                        <outlet property="roundChart" destination="7oO-u2-TjO" id="QzN-3T-4S7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

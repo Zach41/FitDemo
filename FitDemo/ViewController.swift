@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var percentabgeLabel: UILabel!
     
+    @IBOutlet weak var roundChart: RoundChartView!
     private var tween : Tween!
     
     override func viewDidLoad() {
@@ -31,6 +32,8 @@ class ViewController: UIViewController {
             }
         }
         
+        roundChart.chartThickness = 20.0;
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,11 +43,15 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         labelVIew.animate(0)
+        roundChart.show(45, delay: 0)
     }
 
     @IBAction func typingAction(sender: UIButton) {
         labelVIew.animate(0)
         tween.start()
+        roundChart.reset()
+        roundChart.show(45, delay: 0)
+        
     }
 
 }
